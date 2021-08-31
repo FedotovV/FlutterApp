@@ -26,41 +26,6 @@ class UserProfile extends StatelessWidget {
               height: 5,
             ),
             _NicknameUserWidget(),
-            SizedBox(
-              height: 30,
-            ),
-            _MenuBottom(),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _MenuBottom extends StatefulWidget {
-  const _MenuBottom({Key? key}) : super(key: key);
-
-  @override
-  __MenuBottomState createState() => __MenuBottomState();
-}
-
-class __MenuBottomState extends State<_MenuBottom> {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            ElevatedButton(
-              onPressed: null,
-              child: const Text('Disabled'),
-            ),
-            const SizedBox(height: 30),
-            ElevatedButton(
-              onPressed: () {},
-              child: const Text('Enabled'),
-            ),
           ],
         ),
       ),
